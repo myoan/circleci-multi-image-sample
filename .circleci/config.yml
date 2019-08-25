@@ -15,3 +15,9 @@ jobs:
       - run:
           name: Greeting
           command: echo Hello, world.
+
+workflows:
+  version: 2
+  sample:
+    jobs:
+      - build
